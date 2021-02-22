@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="icon" type="image/png"  href="taco.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <title>TAQUITO FELIZ</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <img src="taco.png" width="70"> <!--imagen-->
+          <li><h3>TAQUITO FELIZ</li></h3>
+        </ol>
+      </nav>
+      <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast">
+            Debido a que a muchos de nosotros se nos ha llegado antojar unos tacos y la tienda donde
+siempre compramos se encuentra cerrada o está muy lejos de tu casa, es por eso que se
+decidió darle publicidad a una taquería, para que, con ayuda de la página, su negocio se
+expanda. Aunque, la idea principal es ofrecer y vender tacos a domicilio, también habrá
+bebidas como refresco en lata o vidrio.
+
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <div class="container" id="registration-form">
+        <div class="image"></div>
+        <div class="frm">
+            <h1>Registrarte</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">Nombre(s):</label>
+                    <input type="text" class="form-control" id="username" placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="username">Apellido(s):</label>
+                    <input type="text" class="form-control" id="username" placeholder="Escribe tus apellidos">
+                </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Pide tu menu de tacos</option>
+                    <option value="1">Al Pastor</option>
+                    <option value="2">Suadero</option>
+                    <option value="3">Longaniza</option>
+                    <option value="4">Gobernador</option>
+                    <option value="5">Pollo</option>
+                    <option value="7">Placero</option>
+                  </select>
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Refresco</option>
+                    <option value="1">Lata</option>
+                    <option value="2">De vidrio</option>
+                    <option value="3">De plastico</option>
+                    <option value="4">De 3 lts</option>
+                    <option value="5">De 2 lts</option>
+                    <option value="7">Ninguno</option>
+                  </select>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingSelect">¿Cuantos tacos?</label>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>Seleccione la cantidad</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                      <label class="form-check-label" for="autoSizingCheck">
+                        Con todo (Cebolla y ciliandro)
+                      </label>
+                      <div class="form-group">
+                        <label for="username">Pida Su orden especial</label>
+                        <input type="text" class="form-control" id="username" placeholder="orden especial">
+                    </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
